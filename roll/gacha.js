@@ -186,7 +186,7 @@ var rply ={type : 'text'}; //type是必需的,但可以更改
 			GResult = GResult + GachaResult[i];
 		}
 		
-		GResult = GResult + '\n--------------------\n總計獲得角色:';
+		GResult = GResult + '\n--------------------\n總計獲得角色:\n';
 		
 		for(var i = 0;i<times;i++){
 			if(CharacterResult[i] != null ) GResult = GResult + CharacterResult[i] + ',' ;
