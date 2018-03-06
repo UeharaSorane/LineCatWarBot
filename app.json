@@ -1,7 +1,7 @@
 {
-	"name": "UeharaSoraneBot",
-	"description": "梅里歐斯的冒險者專用BOT",
-	"repository": "https://github.com/UeharaSorane/SoraneBot.gitt",
+	"name": "LineCatWarBot",
+	"description": "貓爭專用BOT",
+	"repository": "https://github.com/UeharaSorane/LineCatWarBot.git",
 	"keywords": ["Line Bot", "TRPG"],
 	"env": {
 		"LINE_CHANNEL_SECRET": {
