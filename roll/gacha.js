@@ -169,14 +169,15 @@ var rply ={type : 'text'}; //type是必需的,但可以更改
 
 		for(var i = 0;i<times;i++){
 			
+			CharacterR = 1;
+			
 			for(var j = i+1;j<times;j++){
 				if(CharacterResult[i]!= null && CharacterResult[i] == CharacterResult[j] && CharacterResult[j] != null){
 					CharacterResult[j] = null;
 					CharacterR++ ;
 				}
 			   }
-			
-			CharacterResult[i] = CharacterResult[i] + '*' + CharacterR;
+			if(CharacterResult[i]!= null) CharacterResult[i] = CharacterResult[i] + '*' + CharacterR;
 			
 		}///重複角色判斷
 		
