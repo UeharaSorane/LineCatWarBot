@@ -137,27 +137,27 @@ var rply ={type : 'text'}; //type是必需的,但可以更改
 
 			if(temp >characterChance2+characterChance3+characterChance4+characterChance5){
 				
-				CharacterResult[times-characterST+i] = CharacterList1[Math.floor((Math.random() * (CharacterList1.length)) + 0)];
+				CharacterResult[i] = CharacterList1[Math.floor((Math.random() * (CharacterList1.length)) + 0)];
 				GachaResult[i] = '\☆:' +  CharacterResult[i]+ '\n';
 				
 			}else if(temp <=characterChance2+characterChance3+characterChance4+characterChance5 && temp > characterChance3+characterChance4+characterChance5){
 				
-				CharacterResult[times-characterST+i] = CharacterList2[Math.floor((Math.random() * (CharacterList2.length)) + 0)];
+				CharacterResult[i] = CharacterList2[Math.floor((Math.random() * (CharacterList2.length)) + 0)];
 				GachaResult[i] = '\☆☆:' +  CharacterResult[i]+ '\n';
 				
 			}else if(temp <= characterChance3+characterChance4+characterChance5 && temp > characterChance4+characterChance5){
 				
-				CharacterResult[times-characterST+i] = CharacterList3[Math.floor((Math.random() * (CharacterList3.length)) + 0)];
+				CharacterResult[i] = CharacterList3[Math.floor((Math.random() * (CharacterList3.length)) + 0)];
 				GachaResult[i] = '\☆☆☆:' +  CharacterResult[i]+ '\n';
 				
 			}else if(temp <= characterChance4+characterChance5 && temp >characterChance5){
 				
-				CharacterResult[times-characterST+i] = CharacterList4[Math.floor((Math.random() * (CharacterList4.length)) + 0)];
+				CharacterResult[i] = CharacterList4[Math.floor((Math.random() * (CharacterList4.length)) + 0)];
 				GachaResult[i] = '\☆☆☆☆:' +  CharacterResult[i]+ '\n';
 				
 			}else if(temp <= characterChance5){
 				
-				CharacterResult[times-characterST+i] = CharacterList5[Math.floor((Math.random() * (CharacterList5.length)) + 0)];
+				CharacterResult[i] = CharacterList5[Math.floor((Math.random() * (CharacterList5.length)) + 0)];
 				GachaResult[i] = '\☆☆☆☆☆:' +  CharacterResult[i]+ '\n';
 				
 			}
