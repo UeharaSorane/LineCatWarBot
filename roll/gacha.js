@@ -27,7 +27,27 @@ var rply ={type : 'text'}; //type是必需的,但可以更改
 		///確定抽獎狀態
 		if(DrawPool == 0){
 			CharacterList1.length = 3;
-			CharacterList1 = ['A','B','C'];
+			CharacterList1 = ['黑木零次郎','B','C'];
+			CharacterList2.length = 3;
+			CharacterList2 = ['AA','BB','CC'];
+			CharacterList3.length = 3;
+			CharacterList3 = ['AAA','BBB','CCC'];
+			CharacterList4.length = 3;
+			CharacterList4= ['AAAA','BBBB','CCCC'];
+			CharacterList5.length = 2;
+			CharacterList5= ['路卡','露'];
+			
+			characterChance1 = 50;
+			characterChance2if(DrawPool == 0){
+			CharacterList1.length = 3;
+			CharacterList1 = ['黑木零次郎','B','C'];
+			CharacterList2.length = 3;
+			CharacterList2 = ['AA','BB','CC'];
+			CharacterList3.length = 3;
+			CharacterList3 = ['AAA','BBB','CCC'];
+			CharacterList4.length = 3;if(DrawPool == 0){
+			CharacterList1.length = 3;
+			CharacterList1 = ['黑木零次郎','B','C'];
 			CharacterList2.length = 3;
 			CharacterList2 = ['AA','BB','CC'];
 			CharacterList3.length = 3;
@@ -39,6 +59,127 @@ var rply ={type : 'text'}; //type是必需的,但可以更改
 			
 			characterChance1 = 50;
 			characterChance2 = 30;
+			characterChance3 = 10;
+			characterChance4 = 8;
+			characterChance5 = 2;
+
+			if(GachaTimes =='單抽'){
+				times = 1;
+	
+			}else if(GachaTimes =='十連'){
+				times = 11;
+				characterST = 1;
+	
+			}else if(GachaTimes == null){
+				
+				rply.text = '【首次限定！】新手招募-絕對獲得攻擊型夥伴一名喔！ \
+					\n\
+					\n 出現夥伴一覽： \
+					\n 001起始英雄系列 \
+					\n  克雷特\
+					\n  路卡\
+					\n  露\
+					\n  (三名夥伴獲得機率相同)\
+					\n\
+					\n 提供招募方式：\
+					\n 單抽 無需奇蹟石(100%出現夥伴)[一名玩家限定一次] \
+					\n\
+					\n 想要招募的話，請輸入 [招募 0 招募方式] ';
+				
+				return rply;
+				
+			  }else{
+				rply.text = '本招募無法使用' + GachaTimes +'招募喔\n 如果想看本招募詳細內容，請輸入 [招募 ' + DrawPool + ']';
+				return rply;	
+			  	}
+		}else
+			CharacterList4= ['AAAA','BBBB','CCCC'];
+			CharacterList5.length = 2;
+			CharacterList5= ['路卡','露'];
+			
+			characterChance1 = 50;
+			characterChance2 = 30;
+			characterChance3 = 10;
+			characterChance4 = 8;
+			characterChance5 =if(DrawPool == 0){
+			CharacterList1.length = 3;
+			CharacterList1 = ['黑木零次郎','B','C'];
+			CharacterList2.length = 3;
+			CharacterList2 = ['AA','BB','CC'];
+			CharacterList3.length = 3;
+			CharacterList3 = ['AAA','BBB','CCC'];
+			CharacterList4.length = 3;
+			CharacterList4= ['AAAA','BBBB','CCCC'];
+			CharacterList5.length = 2;
+			CharacterList5= ['路卡','露'];
+			
+			characterChance1 = 50;
+			characterChance2 = 30;
+			characterChance3 = 10;
+			characterChance4 = 8;
+			characterChance5 = 2;
+
+			if(GachaTimes =='單抽'){
+				times = 1;
+	
+			}else if(GachaTimes =='十連'){
+				times = 11;
+				characterST = 1;
+	
+			}else if(GachaTimes == null){
+				
+				rply.text = '【首次限定！】新手招募-絕對獲得攻擊型夥伴一名喔！ \
+					\n\
+					\n 出現夥伴一覽： \
+					\n 001起始英雄系列 \
+					\n  克雷特\
+					\n  路卡\
+					\n  露\
+					\n  (三名夥伴獲得機率相同)\
+					\n\
+					\n 提供招募方式：\
+					\n 單抽 無需奇蹟石(100%出現夥伴)[一名玩家限定一次] \
+					\n\
+					\n 想要招募的話，請輸入 [招募 0 招募方式] ';
+				
+				return rply;
+				
+			  }else{
+				rply.text = '本招募無法使用' + GachaTimes +'招募喔\n 如果想看本招募詳細內容，請輸入 [招募 ' + DrawPool + ']';
+				return rply;	
+			  	}
+		}else 2;
+
+			if(GachaTimes =='單抽'){
+				times = 1;
+	
+			}else if(GachaTimes =='十連'){
+				times = 11;
+				characterST = 1;
+	
+			}else if(GachaTimes == null){
+				
+				rply.text = '【首次限定！】新手招募-絕對獲得攻擊型夥伴一名喔！ \
+					\n\
+					\n 出現夥伴一覽： \
+					\n 001起始英雄系列 \
+					\n  克雷特\
+					\n  路卡\
+					\n  露\
+					\n  (三名夥伴獲得機率相同)\
+					\n\
+					\n 提供招募方式：\
+					\n 單抽 無需奇蹟石(100%出現夥伴)[一名玩家限定一次] \
+					\n\
+					\n 想要招募的話，請輸入 [招募 0 招募方式] ';
+				
+				return rply;
+				
+			  }else{
+				rply.text = '本招募無法使用' + GachaTimes +'招募喔\n 如果想看本招募詳細內容，請輸入 [招募 ' + DrawPool + ']';
+				return rply;	
+			  	}
+		}else = 30;
 			characterChance3 = 10;
 			characterChance4 = 8;
 			characterChance5 = 2;
