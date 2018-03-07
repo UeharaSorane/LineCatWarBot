@@ -66,6 +66,11 @@ function main() {
 			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
 					\n你獲得了技能書「' + MondayBox[Math.floor((Math.random() * (MondayBox.length)) + '」';
 			
+		}else if(day == 1){
+			
+			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
+					\n你獲得了技能書「' + MondayBox[Math.floor((Math.random() * (MondayBox.length)) + '」';
+			
 		}
 		
 		
