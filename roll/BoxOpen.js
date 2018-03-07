@@ -54,9 +54,62 @@ function main() {
 	var date = new Date();
 	var day = date.getDay();
 	
+	///寶箱機率
+	var Nrate = 32;
+	var Rrate = 28;
+	var Hrate = 25;
+	var Prate = 15;
+	
+	var RHP = Rrate+Hrate+Prate;
+	var HP = Hrate+Prate;
+	var P = Prate;
+	///
+	
+	var Sitem = 0;
+	var Mitem = 0;
+	var Litem = 0;
+	
 	let temp = rollbase.Dice(100);
 		
-	if (temp >= 68) rply.text =  '\恭喜，是普通獎勵。';
+	if (temp > RHP){
+		if(day ==0){
+			Sitem = rollbase.Dice(5);
+			rply.text = '恭喜，是普通獎勵。\
+					\n你獲得了' + Sitem + '個武器素材(小)';
+			
+		}else if(day == 1){
+			
+			rply.text = '恭喜，是普通獎勵。\
+					\n你獲得了10G';
+			
+		}else if(day == 2){
+			
+			rply.text = '恭喜，是普通獎勵。\
+					\n你獲得了10G';
+			
+		}else if(day == 3){
+			
+			rply.text = '恭喜，是普通獎勵。\
+					\n你獲得了10G';
+			
+		}else if(day == 4){
+			
+			rply.text = '恭喜，是普通獎勵。\
+					\n你獲得了10G';
+			
+		}else if(day == 5){
+			
+			rply.text = '恭喜，是普通獎勵。\
+					\n你獲得了10G';
+			
+		}else if(day ==6){
+			Sitem = rollbase.Dice(5);
+			rply.text = '恭喜，是普通獎勵。\
+					\n你獲得了' + Sitem + '個公會素材(小)';
+			
+		}
+	
+	}
 	if (temp <=67 && temp >= 39) rply.text = '\恭喜，是中等獎勵。';
 	if (temp <=38 && temp >= 16) rply.text = '\喔喔！是高等獎勵欸，恭喜！';
 	if (temp <=15){
