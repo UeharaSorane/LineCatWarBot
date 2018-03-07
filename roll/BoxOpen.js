@@ -64,22 +64,22 @@ function main() {
 		}else if(day == 1){
 			
 			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
-					\n你獲得了技能書「' + MondayBox[Math.floor((Math.random() * (MondayBox.length)) + '」';
+					\n你獲得了技能書「' + MondayBox[Math.floor((Math.random() * (MondayBox.length)))] + '」';
 			
 		}else if(day == 2){
 			
 			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
-					\n你獲得了技能書「' + TuesdayBox[Math.floor((Math.random() * (TuesdayBox.length)) + '」';
+					\n你獲得了技能書「' + TuesdayBox[Math.floor((Math.random() * (TuesdayBox.length)))] + '」';
 			
 		}else if(day == 3){
 			
 			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
-					\n你獲得了技能書「' + WednesdayBox[Math.floor((Math.random() * (WednesdayBox.length)) + '」';
+					\n你獲得了技能書「' + WednesdayBox[Math.floor((Math.random() * (WednesdayBox.length)))] + '」';
 			
 		}else if(day == 4){
 			
 			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
-					\n你獲得了技能書「' + ThursdayBox[Math.floor((Math.random() * (ThursdayBox.length)) + '」';
+					\n你獲得了技能書「' + ThursdayBox[Math.floor((Math.random() * (ThursdayBox.length)))] + '」';
 			
 		}
 		
