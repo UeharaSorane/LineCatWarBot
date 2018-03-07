@@ -109,11 +109,108 @@ function main() {
 			
 		}
 	
-	}
-	if (temp <=67 && temp >= 39) rply.text = '\恭喜，是中等獎勵。';
-	if (temp <=38 && temp >= 16) rply.text = '\喔喔！是高等獎勵欸，恭喜！';
-	if (temp <=15){
+	}else if (temp <=RHP && temp > HP){
 		if(day ==0){
+			Sitem = rollbase.Dice(10);
+			Mitem = rollbase.Dice(5);
+			Litem = rollbase.Dice(3);
+			rply.text = '恭喜，是中等獎勵。\
+					\n你獲得了' + Sitem + '個武器素材(小)\
+					\n你獲得了' + Mitem + '個武器素材(中)\
+					\n你獲得了' + Litem + '個武器素材(大)';
+			
+		}else if(day == 1){
+			
+			rply.text = '恭喜，是中等獎勵。\
+					\n你獲得了50G';
+			
+		}else if(day == 2){
+			
+			rply.text = '恭喜，是中等獎勵。\
+					\n你獲得了50G';
+			
+		}else if(day == 3){
+			
+			rply.text = '恭喜，是中等獎勵。\
+					\n你獲得了50G';
+			
+		}else if(day == 4){
+			
+			rply.text = '恭喜，是中等獎勵。\
+					\n你獲得了50G';
+			
+		}else if(day == 5){
+			
+			rply.text = '恭喜，是中等獎勵。\
+					\n你獲得了50G';
+			
+		}else if(day ==6){
+			Sitem = rollbase.Dice(10);
+			Mitem = rollbase.Dice(5);
+			Litem = rollbase.Dice(3);
+			rply.text = '恭喜，是中等獎勵。\
+					\n你獲得了' + Sitem + '個公會素材(小)\
+					\n你獲得了' + Mitem + '個公會素材(中)\
+					\n你獲得了' + Litem + '個公會素材(大)';
+			
+		}
+	
+	}else if (temp <=HP && temp > P){
+		if(day ==0){
+			Sitem = rollbase.Dice(20);
+			Mitem = rollbase.Dice(10);
+			Litem = rollbase.Dice(5);
+			rply.text = '喔喔！是高等獎勵欸，恭喜！\
+					\n你獲得了' + Sitem + '個武器素材(小)\
+					\n你獲得了' + Mitem + '個武器素材(中)\
+					\n你獲得了' + Litem + '個武器素材(大)';
+			
+		}else if(day == 1){
+			
+			rply.text = '喔喔！是高等獎勵欸，恭喜！\
+					\n你獲得了100G';
+			
+		}else if(day == 2){
+			
+			rply.text = '喔喔！是高等獎勵欸，恭喜！\
+					\n你獲得了100G';
+			
+		}else if(day == 3){
+			
+			rply.text = '喔喔！是高等獎勵欸，恭喜！\
+					\n你獲得了100G';
+			
+		}else if(day == 4){
+			
+			rply.text = '喔喔！是高等獎勵欸，恭喜！\
+					\n你獲得了100G';
+			
+		}else if(day == 5){
+			
+			rply.text = '喔喔！是高等獎勵欸，恭喜！\
+					\n你獲得了100G';
+			
+		}else if(day ==6){
+			Sitem = rollbase.Dice(20);
+			Mitem = rollbase.Dice(10);
+			Litem = rollbase.Dice(5);
+			rply.text = '喔喔！是高等獎勵欸，恭喜！\
+					\n你獲得了' + Sitem + '個公會素材(小)\
+					\n你獲得了' + Mitem + '個公會素材(中)\
+					\n你獲得了' + Litem + '個公會素材(大)';
+			
+		}
+	
+	}else if (temp <=P){
+		if(day == 0){
+			Sitem = rollbase.Dice(90)+10;
+			Mitem = rollbase.Dice(20);
+			Litem = rollbase.Dice(10);
+			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
+					\n你獲得了' + Sitem + '個武器素材(小)\
+					\n你獲得了' + Mitem + '個武器素材(中)\
+					\n你獲得了' + Litem + '個武器素材(大)';
+			
 		}else if(day == 1){
 			
 			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
@@ -134,11 +231,21 @@ function main() {
 			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
 					\n你獲得了技能書「' + ThursdayBox[Math.floor((Math.random() * (ThursdayBox.length)))] + '」';
 			
+		}else if(day == 5){
+			
+			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
+					\n你獲得了1000G';
+			
+		}else if(day ==6){
+			Sitem = rollbase.Dice(90)+10;
+			Mitem = rollbase.Dice(30);
+			Litem = rollbase.Dice(20);
+			rply.text = '太棒了！！！是頂級獎勵！恭喜！\
+					\n你獲得了' + Sitem + '個公會素材(小)\
+					\n你獲得了' + Mitem + '個公會素材(中)\
+					\n你獲得了' + Litem + '個公會素材(大)';
+			
 		}
-		
-		
-		
-		
 	}
 	
 	
