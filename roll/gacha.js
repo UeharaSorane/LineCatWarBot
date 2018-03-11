@@ -10,12 +10,13 @@ var rply ={type : 'text'}; //type是必需的,但可以更改
 		var times = 0;//抽獎次數
 		
 		//宣告角色清單
-		let CharacterList0 = [];//特殊角色清單
-		let CharacterList1 = [];//一星角色清單
-		let CharacterList2 = [];//二星角色清單
-		let CharacterList3 = [];//三星角色清單
-		let CharacterList4 = [];//四星角色清單
-		let CharacterList5 = [];//五星角色清單
+		let CharacterList = [];
+		let CharacterList[0] = [];//特殊角色清單
+		let CharacterList[1] = [];//一星角色清單
+		let CharacterList[2] = [];//二星角色清單
+		let CharacterList[3] = [];//三星角色清單
+		let CharacterList[4] = [];//四星角色清單
+		let CharacterList[5] = [];//五星角色清單
  
 		var characterChance0 = 0;//特殊角色獲得率
 		var characterChance1 = 0;//一星角色獲得率
@@ -28,8 +29,8 @@ var rply ={type : 'text'}; //type是必需的,但可以更改
 		
 		///確定抽獎狀態
 		if(DrawPool == 0){
-			CharacterList0.length = 3;
-			CharacterList0 = ['疾走艾恩','獵人哈里','菲露米雅'];
+			CharacterList[0].length = 3;
+			CharacterList[0] = ['疾走艾恩','獵人哈里','菲露米雅'];
 			
 			characterChance0 = 100;
 			characterChance1 = 0;
@@ -67,16 +68,16 @@ var rply ={type : 'text'}; //type是必需的,但可以更改
 				return rply;	
 			  	}
 		}else if(DrawPool == 1){
-			CharacterList1.length = 3;
-			CharacterList1 = ['A','B','C'];
-			CharacterList2.length = 3;
-			CharacterList2 = ['AA','BB','CC'];
-			CharacterList3.length = 3;
-			CharacterList3 = ['AAA','BBB','CCC'];
-			CharacterList4.length = 3;
-			CharacterList4= ['AAAA','BBBB','CCCC'];
-			CharacterList5.length = 2;
-			CharacterList5= ['路卡','露'];
+			CharacterList[1].length = 3;
+			CharacterList[1] = ['A','B','C'];
+			CharacterList[2].length = 3;
+			CharacterList[2] = ['AA','BB','CC'];
+			CharacterList[3].length = 3;
+			CharacterList[3] = ['AAA','BBB','CCC'];
+			CharacterList[4].length = 3;
+			CharacterList[4]= ['AAAA','BBBB','CCCC'];
+			CharacterList[5].length = 2;
+			CharacterList[5]= ['路卡','露'];
 			
 			characterChance1 = 50;
 			characterChance2 = 30;
@@ -144,11 +145,13 @@ var rply ={type : 'text'}; //type是必需的,但可以更改
 		///確認內容
 		if(GachaTimes =='內容'){
 			
+			for(var i =0;i<6;)
+			
 			let tempList0 = []
 			
-			for(var i = 0;i<CharacterList0.length;i++){
+			for(var i = 0;i<CharacterList[0].length;i++){
 
-				for(var j = i+1;j<CharacterList0.length;j++){
+				for(var j = i+1;j<CharacterList[0].length;j++){
 					if(CharacterResult[i]!= null && CharacterResult[i] == CharacterResult[j] && CharacterResult[j] != null){
 						CharacterResult[j] = null;
 						CharacterR++ ;
